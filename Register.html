@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script type="text/javascript">
+function fun()
+{
+	if(document.fm.branch.value=="select")
+		{
+			alert("please select branch");
+			document.fm.branch.focus();
+			return false;
+		}
+	
+	}
+</script>
+</head>
+<body bgcolor='lightblue'>
+<form action='Registration' method='post'>
+<table border='1'>
+<tr><td>First Name :<td><input type='text' name='FirstName'>
+<tr><td>Second Name:<td><input type='text' name='SecondName'>
+<tr><td>Roll number:<td><input type='text' name='rollno'>
+<tr><td>Branch     :<td><select name='branch'>
+<option value='select' id='branch'>select your branch</option>
+<option value='Cse'>CSE</option>
+<option value='Ece'>ECE</option>
+<option value='EEE'>EEE</option>		
+<tr><td>phone number:<td><input type='number'name='phno'>
+<tr><td>email      :<td><input type='text' name='email'>
+<tr><td>Address    :<td><input type='text' name='address'>
+<tr><td>password   :<td><input type='password' name='pwd'>
+<tr><td>Gender     :<td><input type='radio' name='gender' checked>male
+		                <input type='radio' name='gender'>female
+<tr><td><input type='submit' value='submit'>		                
+</table>		    
+ </form>
+<body>
+</body>
+</html>
